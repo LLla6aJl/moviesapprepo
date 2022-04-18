@@ -22,7 +22,7 @@ export default class ListItem extends Component {
 
   render() {
     this.searchMovie();
-    const { myarray } = this.state;
+    let { myarray } = this.state;
     return (
       <ul className="item-list">
         <Item myarray={myarray} />
