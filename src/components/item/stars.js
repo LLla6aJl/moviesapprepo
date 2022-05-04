@@ -30,7 +30,6 @@ export default class Stars extends Component {
     const { rateValue } = this.state;
     return (
       <Rate
-        allowHalf
         count="10"
         style={{ fontSize: 16 }}
         value={rateValue}

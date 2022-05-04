@@ -1,6 +1,13 @@
+@import '~antd/dist/antd.min.css';
+
 .ant-layout-content {
     padding-top: 20px;
     padding-left: 20px;
     background-color: white;
+}
+
+.tabs {
+    width: 146px;
+    margin: auto;
 }
 

@@ -5,7 +5,6 @@ import { Spin, Alert, Layout, Pagination, Tabs } from 'antd';
 import store from 'store';
 
 import MoviesDBService from '../../services/moviedb-service';
-import 'antd/dist/antd.min.css';
 import './app.css';
 // eslint-disable-next-line import/no-cycle
 import ListItem from '../list-item/list-item';
@@ -206,14 +205,16 @@ export default class App extends Component {
           <UserContext.Provider value={contextValue}>
             <Layout>
               <Content>
-                <Tabs
-                  defaultActiveKey="1"
-                  centered
-                  onChange={this.changeTabPane}
-                >
-                  <TabPane tab="Search" key="1" />
-                  <TabPane tab="Rated" key="2" />
-                </Tabs>
+                <div className="tabs">
+                  <Tabs
+                    defaultActiveKey="1"
+                    centered
+                    onChange={this.changeTabPane}
+                  >
+                    <TabPane tab="Search" key="1" />
+                    <TabPane tab="Rated" key="2" />
+                  </Tabs>
+                </div>
                 {search}
                 {spinner}
                 {errorMessageAlert}
