@@ -1,0 +1,23 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+    
+  }
+
+body {
+    background-color:  #E5E5E5 !important;
+}
+
+#root {
+ width: 1010px;
+ margin: auto;
+ padding-left: 32px;
+    @media screen and (max-width: 420px) {
+    max-width: 420px;
+    padding-left: 0
+  }
+ 
+
+}
