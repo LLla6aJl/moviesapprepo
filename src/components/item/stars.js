@@ -17,8 +17,10 @@ export default class Stars extends Component {
     this.setState({
       rateValue: rate,
     });
-    if (rate === 0) moviesDBService.deleteRateMovie(id, sessionID);
-    else {
+    if (rate === 0) {
+      moviesDBService.deleteRateMovie(id, sessionID);
+      store.set(`${id}`, `${rate}`);
+    } else {
       moviesDBService.rateMovie(id, rate, sessionID);
       store.set(`${id}`, `${rate}`);
     }

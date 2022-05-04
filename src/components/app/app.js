@@ -32,9 +32,9 @@ export default class App extends Component {
   moviesDBService = new MoviesDBService();
 
   componentDidMount() {
+    this.searchMovie();
     this.getSessionID();
     this.getGenres();
-    store.clearAll();
   }
 
   onMovieLoaded = (movies) => {
