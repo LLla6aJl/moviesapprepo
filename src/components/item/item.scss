@@ -10,16 +10,28 @@
 
 .li-item {
     height: 281px;
-    overflow: hidden;
+    
     margin-bottom: 35px;
     box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.15);
     width: 454px;
     margin-right: 33px;
     @media screen and (max-width: 420px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: hidden;
         width: 387px;
         height: 245px;
         margin-bottom: 20px;
         margin-right: 0px;
+        padding-bottom: 10px;
+        padding-right: 10px;
+}
+}
+
+.stars {
+    @media screen and (max-width: 420px) {
+       align-self: flex-end;
 }
 }
 
@@ -56,6 +68,9 @@
     line-height: 25px;
     flex-shrink: 0;
     margin-right: 3px;
+    @media screen and (max-width: 420px) {
+        margin-right: -5px;
+}
 }
 
 .E97E00 {
@@ -121,9 +136,7 @@ margin-block-end: 0;
 
 .ant-rate {
     @media screen and (max-width: 420px) {
-    position: absolute;
-    right: 10px;
-    top: 200px;
+    
     }
 }
 

@@ -1,5 +1,5 @@
 .inputSearch {
-  width: 938px;
+  width: 100%;
   height: 40px;
   border: 1px solid #d9d9d9;
   border-radius: 4px;
@@ -8,7 +8,7 @@
   margin-bottom: 20px;
 
   @media screen and (max-width: 420px) {
-    width: 388px;
+    
   }
 }
 

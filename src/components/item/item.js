@@ -95,6 +95,8 @@ function Item() {
           </p>
           <p className="genre">{genresItems}</p>
           <p className="description">{overviewTruncated}</p>
+        </div>
+        <div className="stars">
           <Stars id={id} sessionID={sessionID} />
         </div>
       </li>
