@@ -1,4 +1,4 @@
-@import '~antd/dist/antd.min.css';
+
 
 .ant-layout-content {
     padding-top: 20px;
@@ -7,7 +7,25 @@
 }
 
 .tabs {
-    width: 146px;
+    width: 144px;
     margin: auto;
 }
 
+.ant-tabs-ink-bar::after {
+    content: " ";
+    position: absolute;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background: #1890ff;
+    width: 67px;
+    transform: translateX(-50%);
+  }
+
+  @font-face {
+    font-family: 'Inter'; 
+    src: url("./Inter-Regular.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+    } 

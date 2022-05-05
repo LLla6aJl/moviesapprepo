@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import { Offline, Online } from 'react-detect-offline';
 import { Spin, Alert, Layout, Pagination, Tabs } from 'antd';
 import store from 'store';
+import 'antd/dist/antd.min.css';
 
 import MoviesDBService from '../../services/moviedb-service';
 import './app.css';
