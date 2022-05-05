@@ -2,6 +2,7 @@
     font-family: 'Inter';
     font-style: normal;
     color: #000000;
+    
     @media screen and (max-width: 420px) {
       padding-left: 10px;
       position: relative;
@@ -9,12 +10,12 @@
 }
 
 .li-item {
-    height: 281px;
-    
+   
     margin-bottom: 35px;
     box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.15);
     width: 454px;
     margin-right: 33px;
+    position: relative;
     @media screen and (max-width: 420px) {
         display: flex;
         flex-direction: column;
@@ -30,8 +31,12 @@
 }
 
 .stars {
+    position: absolute;
+    bottom: 5px;
+    left: 200px;
     @media screen and (max-width: 420px) {
-       align-self: flex-end;
+    position: static;
+    align-self: flex-end;
 }
 }
 
