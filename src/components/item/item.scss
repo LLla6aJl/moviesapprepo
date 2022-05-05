@@ -11,14 +11,15 @@
 .li-item {
     height: 281px;
     overflow: hidden;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
     box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.15);
     width: 454px;
-
+    margin-right: 33px;
     @media screen and (max-width: 420px) {
         width: 387px;
         height: 245px;
-        margin-bottom: 24px;
+        margin-bottom: 20px;
+        margin-right: 0px;
 }
 }
 

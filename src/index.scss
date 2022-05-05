@@ -1,22 +1,33 @@
 html {
-    box-sizing: border-box;
-  }
-  *, *:before, *:after {
-    box-sizing: inherit;
-    
-  }
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+*, *::before, *::after {
+  -moz-box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
 
 body {
     background-color:  #E5E5E5 !important;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
 }
 
 #root {
  width: 1010px;
- margin: auto;
- padding-left: 32px;
+ margin: auto;  
+ overflow: hidden;
     @media screen and (max-width: 420px) {
-    max-width: 420px;
-    padding-left: 0
+    width: 420px;
   }
  
 

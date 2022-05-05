@@ -6,7 +6,7 @@ import store from 'store';
 import 'antd/dist/antd.min.css';
 
 import MoviesDBService from '../../services/moviedb-service';
-import './app.css';
+import './app.scss';
 // eslint-disable-next-line import/no-cycle
 import ListItem from '../list-item/list-item';
 import SearchMovie from '../search/searchmovie';
